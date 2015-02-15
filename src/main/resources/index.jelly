@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+  A plugin that searches an S3 Yum repository and presents the results as a persistent dropdown parameter.
+</div>
