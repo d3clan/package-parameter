@@ -4,8 +4,8 @@
         <div name="parameter">
             <input type="hidden" name="name" value="${it.name}" />
             <select name="value">
-                <j:forEach var="value" items="${it.choices}">
-                    <f:option value="${value.key}" selected="${it.value.key==value.key}">${value.value}</f:option>
+                <j:forEach var="item" items="${it.choices}">
+                    <f:option value="${item.key}" selected="${it.value.key==item.key}">${item.value}</f:option>
                 </j:forEach>
             </select>
         </div>

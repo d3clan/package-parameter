@@ -1,21 +1,20 @@
 package com.virginholidays.jenkins.yumparamater;
 
-import com.google.common.collect.Maps;
+import com.virginholidays.jenkins.yumparamater.aws.AwsClientReader;
 import hudson.Extension;
-import hudson.model.Descriptor;
-import hudson.model.ParameterDefinition;
 import hudson.model.ParameterValue;
 import hudson.model.SimpleParameterDefinition;
 import hudson.model.StringParameterValue;
 import hudson.util.FormValidation;
 import net.sf.json.JSONObject;
+import org.apache.commons.lang.StringUtils;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.export.Exported;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.xml.bind.JAXBException;
+import java.io.IOException;
 import java.util.Map;
 
 /**
@@ -26,7 +25,6 @@ import java.util.Map;
  */
 public class PersistentYumParameterDefinition extends SimpleParameterDefinition {
 
-    private List<String> choices;
     private final boolean useAwsKeys;
     private final String awsAccessKeyId;
     private final String awsSecretAccessKey;
@@ -77,12 +75,13 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
     }
 
     @Exported
-    public Map<String, String> getChoices() {
-        final Map<String, String> list = Maps.newHashMap();
-        list.put("Hello-1", "World1");
-        list.put("Hello-2", "World2");
-        list.put("Hello-3", "World3");
-        return list;
+    public Map<String, String> getChoices() throws JAXBException, IOException {
+        final AwsClientReader.Builder builder = AwsClientReader.Builder.newInstance(repoPath);
+        if (useAwsKeys && StringUtils.isNotBlank(awsAccessKeyId) && StringUtils.isNotBlank(awsSecretAccessKey)) {
+            builder.withAwsAccessKeys(awsAccessKeyId, awsSecretAccessKey);
+        }
+        final AwsClientReader reader = builder.build();
+        return reader.getPackageMap(bucketName, repoPath);
     }
 
     public boolean isUseAwsKeys() {
@@ -114,18 +113,6 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
         @Override
         public String getDisplayName() {
             return "AWS S3 Yum repo choice parameter";
-        }
-
-        @Override
-        public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
-            final JSONObject keys = formData.getJSONObject("useAwsKeys");
-            if (useAwsKeys && keys != null && keys.size() > 0) {
-                useAwsKeys = true;
-                awsAccessKeyId = keys.getString("awsAccessKeyId");
-                awsSecretAccessKey = keys.getString("awsSecretAccessKey");
-            }
-            save();
-            return super.configure(req, formData);
         }
 
         @Override

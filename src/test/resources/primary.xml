@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm" packages="11">
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="10" ver="1.0.2" rel="RELEASE_release_1.0.2_RELEASE"/>
+  <checksum type="sha256" pkgid="YES">447aca8b26f905f924651a518888562b3316ca34c113afec5e8fa94180d9f9f5</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843777" build="1423843750"/>
+  <size package="54542885" installed="54542966" archive="54544220"/>
+<location href="vhols-publish-api-1.0.2-RELEASE_release_1.0.2_RELEASE.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-1.0.2-RELEASE_release_1.0.2_RELEASE.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2946"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="10" ver="1.0.2" rel="RELEASE_release_1.0.2_RELEASE"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="11" ver="1.0.3" rel="RELEASE_release_1.0.3_RELEASE"/>
+  <checksum type="sha256" pkgid="YES">c63dc44259c12ae077d741affb2a76173f6bfc191e01b35a0bd82042cbe6ea2e</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423844382" build="1423844349"/>
+  <size package="54546327" installed="54546306" archive="54547560"/>
+<location href="vhols-publish-api-1.0.3-RELEASE_release_1.0.3_RELEASE.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-1.0.3-RELEASE_release_1.0.3_RELEASE.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2946"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="11" ver="1.0.3" rel="RELEASE_release_1.0.3_RELEASE"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="12" ver="1.1.0" rel="RELEASE_release_1.1.0_RELEASE"/>
+  <checksum type="sha256" pkgid="YES">55c07bdda28b992b0d2bbc4e8f2b88424c822dcf61f61789a667f0b36c8f2b9d</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423844967" build="1423844934"/>
+  <size package="54546991" installed="54546943" archive="54548196"/>
+<location href="vhols-publish-api-1.1.0-RELEASE_release_1.1.0_RELEASE.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-1.1.0-RELEASE_release_1.1.0_RELEASE.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2946"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="12" ver="1.1.0" rel="RELEASE_release_1.1.0_RELEASE"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="3" ver="3.0.1" rel="RELEASE_release_3.0.1"/>
+  <checksum type="sha256" pkgid="YES">7a9a1f66a3c4ef889965a8c6bc972a872d6db34ff00837280ac434dd4d0ff97e</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843027" build="1423843022"/>
+  <size package="42177251" installed="42179763" archive="42181016"/>
+<location href="vhols-publish-api-3.0.1-RELEASE_release_3.0.1.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-3.0.1-RELEASE_release_3.0.1.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2922"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="3" ver="3.0.1" rel="RELEASE_release_3.0.1"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="4" ver="3.3.4" rel="RELEASE_release_sprint_47_0"/>
+  <checksum type="sha256" pkgid="YES">6e2914566bdaed17ae00f48a5bfe56ad8fc4fcbe9bb85dcb45a210fb514773e8</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843059" build="1423843052"/>
+  <size package="54541529" installed="54541694" archive="54542948"/>
+<location href="vhols-publish-api-3.3.4-RELEASE_release_sprint_47_0.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-3.3.4-RELEASE_release_sprint_47_0.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2938"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="4" ver="3.3.4" rel="RELEASE_release_sprint_47_0"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="5" ver="3.3.5" rel="RELEASE_release_sprint_48"/>
+  <checksum type="sha256" pkgid="YES">bc10935044b5cae62310d395afeb36136b4bfc4b91c86f5fe06173335a7a776e</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843125" build="1423843114"/>
+  <size package="54542877" installed="54542960" archive="54544212"/>
+<location href="vhols-publish-api-3.3.5-RELEASE_release_sprint_48.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-3.3.5-RELEASE_release_sprint_48.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2934"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="5" ver="3.3.5" rel="RELEASE_release_sprint_48"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="6" ver="3.3.6" rel="RELEASE_release_sprint_49"/>
+  <checksum type="sha256" pkgid="YES">cfb5510e4f6ea88bbb6d76143683d608936bb6f604022137b21b8d17e53b6a90</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843193" build="1423843178"/>
+  <size package="54542883" installed="54542965" archive="54544220"/>
+<location href="vhols-publish-api-3.3.6-RELEASE_release_sprint_49.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-3.3.6-RELEASE_release_sprint_49.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2934"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="6" ver="3.3.6" rel="RELEASE_release_sprint_49"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="7" ver="3.3.7" rel="RELEASE_release_sprint_50"/>
+  <checksum type="sha256" pkgid="YES">0cc31dbe10ceaf36073723ef0d40cdb1c4dcabdfceec57f70898e92892911294</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843275" build="1423843254"/>
+  <size package="54542857" installed="54542952" archive="54544204"/>
+<location href="vhols-publish-api-3.3.7-RELEASE_release_sprint_50.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-3.3.7-RELEASE_release_sprint_50.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2934"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="7" ver="3.3.7" rel="RELEASE_release_sprint_50"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="8" ver="3.3.8" rel="RELEASE_release_sprint_51"/>
+  <checksum type="sha256" pkgid="YES">c4fb4ea281db34bca082f6a460f291923b1124894e00f2cfd03767bf4493bf80</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843374" build="1423843353"/>
+  <size package="54542876" installed="54542956" archive="54544208"/>
+<location href="vhols-publish-api-3.3.8-RELEASE_release_sprint_51.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-3.3.8-RELEASE_release_sprint_51.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2934"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="8" ver="3.3.8" rel="RELEASE_release_sprint_51"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="9" ver="3.3.9" rel="RELEASE_release_sprint_51b"/>
+  <checksum type="sha256" pkgid="YES">028fbe90db5393315bb5b3b5d14ba00e0dd5501ef2cc1326fd76e8f291b7162b</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423843568" build="1423843541"/>
+  <size package="54542864" installed="54542964" archive="54544216"/>
+<location href="vhols-publish-api-3.3.9-RELEASE_release_sprint_51b.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-3.3.9-RELEASE_release_sprint_51b.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2938"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="9" ver="3.3.9" rel="RELEASE_release_sprint_51b"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhols-publish-api</name>
+  <arch>noarch</arch>
+  <version epoch="13" ver="1.1.0" rel="SNAPSHOT_develop"/>
+  <checksum type="sha256" pkgid="YES">1b5799058b635757488108c32096385cda2ba2f9d715de4545c6b28d81c7877d</checksum>
+  <summary>no description given</summary>
+  <description>no description given</description>
+  <packager>support@bashton.com</packager>
+  <url>http://example.com/no-uri-given</url>
+  <time file="1423845204" build="1423845178"/>
+  <size package="54544708" installed="54544745" archive="54546000"/>
+<location href="vhols-publish-api-1.1.0-SNAPSHOT_develop.noarch.rpm"/>
+  <format>
+    <rpm:license>unknown</rpm:license>
+    <rpm:vendor>jenkins@cjenkins-ia50a8f43.webdev.vholsinternal.co.uk</rpm:vendor>
+    <rpm:group>default</rpm:group>
+    <rpm:buildhost>cjenkins-ia50a8f43</rpm:buildhost>
+    <rpm:sourcerpm>vhols-publish-api-1.1.0-SNAPSHOT_develop.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="2910"/>
+    <rpm:provides>
+      <rpm:entry name="vhols-publish-api" flags="EQ" epoch="13" ver="1.1.0" rel="SNAPSHOT_develop"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/sh" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+</metadata>
