@@ -10,7 +10,7 @@
 		</layout>
 	</appender>
 
-	<logger name="com.virginholidays">
+	<logger name="com.viviquity">
 		<level value="DEBUG" />
 		<appender-ref ref="consoleAppender" />
 	</logger>
