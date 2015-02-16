@@ -19,7 +19,7 @@
         Jenkins parameter dropdown. The primary driver for me to develop this was the ability to look up the packages in the repo in order to call MCollective
         with a package that we know exists.
     </description>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/AWS+Yum+Parameter+Plugin</url>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -73,5 +73,23 @@
             <version>4.3.3</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>maven.jenkins-ci.org</id>
+            <url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>deploy</goals>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
