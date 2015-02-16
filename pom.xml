@@ -34,8 +34,8 @@
       </developer>
     </developers>
     <scm>
-      <connection>scm:git:git@github.com:d3clan/aws-yum-paramater.git</connection>
-      <developerConnection>scm:git:git@github.com:d3clan/aws-yum-paramater.git</developerConnection>
+      <connection>scm:git:https://github.com/d3clan/aws-yum-paramater.git</connection>
+      <developerConnection>scm:git:https://github.com/d3clan/aws-yum-paramater.git</developerConnection>
       <url>https://github.com/d3clan/aws-yum-paramater.git</url>
     </scm>
     <repositories>
