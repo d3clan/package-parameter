@@ -177,7 +177,9 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
         }
 
         /**
-         * Checks if parameterised build choices are valid.
+         * Checks if parametrised build choices are valid.
+         * @param value the values to be checked
+         * @return the {@link hudson.util.FormValidation} object containing the information about the validation
          */
         public FormValidation doCheckChoices(@QueryParameter String value) {
             if (PersistentYumParameterDefinition.areValidChoices(value)) {
