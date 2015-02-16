@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
         <version>1.580.1</version>
-        <relativePath />
+        <relativePath/>
     </parent>
     <groupId>com.viviquity.jenkins</groupId>
     <artifactId>aws-yum-parameter</artifactId>
@@ -26,18 +27,18 @@
         </license>
     </licenses>
     <developers>
-      <developer>
-        <id>d3clan</id>
-        <name>Declan Newman</name>
-        <email>declan@declans.net</email>
-      </developer>
+        <developer>
+            <id>d3clan</id>
+            <name>Declan Newman</name>
+            <email>declan@declans.net</email>
+        </developer>
     </developers>
     <scm>
-      <connection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</connection>
-      <developerConnection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</developerConnection>
-      <url>https://github.com/d3clan/aws-yum-parameter.git</url>
-      <tag>HEAD</tag>
-  </scm>
+        <connection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</connection>
+        <developerConnection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</developerConnection>
+        <url>https://github.com/d3clan/aws-yum-parameter.git</url>
+        <tag>HEAD</tag>
+    </scm>
     <repositories>
         <repository>
             <id>repo.jenkins-ci.org</id>
@@ -72,6 +73,11 @@
             <artifactId>httpclient</artifactId>
             <version>4.3.3</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
     </dependencies>
 
     <distributionManagement>
@@ -80,5 +86,20 @@
             <url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
         </repository>
     </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.7</target>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

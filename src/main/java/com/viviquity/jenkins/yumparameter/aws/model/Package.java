@@ -17,8 +17,8 @@ import java.util.Date;
  * @author Declan Newman (467689)
  * @since 15/02/15
  */
-@XmlRootElement(namespace = "http://linux.duke.edu/metadata/common")
-@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlRootElement(name = "package", namespace = "http://linux.duke.edu/metadata/common")
+@XmlAccessorType(XmlAccessType.NONE)
 public class Package {
 
     private String name;

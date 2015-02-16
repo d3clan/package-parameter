@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  * yum-parameter
@@ -14,13 +15,16 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @since 15/02/15
  */
 @XmlRootElement(namespace = "http://linux.duke.edu/metadata/common")
-@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "")
 public class Time {
 
+    @XmlAttribute
     private Long file;
+    @XmlAttribute
     private Long build;
 
-    @XmlAttribute
+
     public Long getFile() {
         return file;
     }
@@ -29,7 +33,6 @@ public class Time {
         this.file = file;
     }
 
-    @XmlAttribute
     public Long getBuild() {
         return build;
     }

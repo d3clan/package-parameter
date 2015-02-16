@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  * yum-parameter
@@ -14,14 +15,17 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @since 15/02/15
  */
 @XmlRootElement(namespace = "http://linux.duke.edu/metadata/common")
-@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "")
 public class Version {
 
+    @XmlAttribute
     private String epoch;
+    @XmlAttribute
     private String ver;
+    @XmlAttribute
     private String rel;
 
-    @XmlAttribute
     public String getEpoch() {
         return epoch;
     }
@@ -30,7 +34,6 @@ public class Version {
         this.epoch = epoch;
     }
 
-    @XmlAttribute
     public String getVer() {
         return ver;
     }
@@ -39,7 +42,6 @@ public class Version {
         this.ver = ver;
     }
 
-    @XmlAttribute
     public String getRel() {
         return rel;
     }

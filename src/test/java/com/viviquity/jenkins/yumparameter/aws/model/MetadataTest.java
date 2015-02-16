@@ -8,7 +8,8 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.stream.StreamSource;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class MetadataTest {
 
@@ -16,8 +17,8 @@ public class MetadataTest {
     public void testPackageParsing() throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(Metadata.class);
         final Unmarshaller unmarshaller = context.createUnmarshaller();
-        final JAXBElement<Metadata> jaxbElement =
-                unmarshaller.unmarshal(new StreamSource(MetadataTest.class.getResourceAsStream("/primary.xml")), Metadata.class);
+        final JAXBElement<Metadata> jaxbElement = unmarshaller
+                .unmarshal(new StreamSource(MetadataTest.class.getResourceAsStream("/primary.xml")), Metadata.class);
         assertNotNull(jaxbElement);
         final Metadata metadata = jaxbElement.getValue();
         assertNotNull(metadata);

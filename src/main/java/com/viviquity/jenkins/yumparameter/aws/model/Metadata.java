@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.List;
 
 /**
@@ -16,13 +17,15 @@ import java.util.List;
  * @since 15/02/15
  */
 @XmlRootElement(name = "metadata", namespace = "http://linux.duke.edu/metadata/common")
-@XmlAccessorType(XmlAccessType.PROPERTY)
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = { "packages" })
 public class Metadata {
 
+    @XmlAttribute(name = "packages")
     private Integer packageCount;
+    @XmlElement(name = "package", required = true)
     private List<Package> packages;
 
-    @XmlAttribute(name = "packages")
     public Integer getPackageCount() {
         return packageCount;
     }
@@ -31,7 +34,6 @@ public class Metadata {
         this.packageCount = packageCount;
     }
 
-    @XmlElement(name = "package")
     public List<Package> getPackages() {
         return packages;
     }
