@@ -78,8 +78,6 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
 
     /**
      * Create a parameter value from a form submission.
-     * <p/>
-     * <p/>
      * This method is invoked when the user fills in the parameter values in the HTML form
      * and submits it to the server.
      *
@@ -96,7 +94,7 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
     /**
      * Returns the choices for the drop down. This is will attempt to locate the primary.xml repo data, and populate the
      * drop-down.
-     * @return
+     * @return the {@link java.util.Map} of options to be displayed to the user when building with parameters.
      * @throws JAXBException if unable to unmarshal the data
      * @throws IOException if we're unable to open the stream for whatever reason. This could be that the AWS S3 request
      * failed for other reasons too.
