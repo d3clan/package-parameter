@@ -1,12 +1,12 @@
-package com.viviquity.jenkins.yumparamater.aws;
+package com.viviquity.jenkins.yumparameter.aws;
 
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.auth.InstanceProfileCredentialsProvider;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.S3Object;
 import com.google.common.collect.Maps;
-import com.viviquity.jenkins.yumparamater.aws.model.Metadata;
-import com.viviquity.jenkins.yumparamater.aws.model.Package;
+import com.viviquity.jenkins.yumparameter.aws.model.Metadata;
+import com.viviquity.jenkins.yumparameter.aws.model.Package;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import java.util.Optional;
 import java.util.zip.GZIPInputStream;
 
 /**
- * yum-paramater
+ * yum-parameter
  *
  * @author Declan Newman (467689)
  * @since 15/02/15

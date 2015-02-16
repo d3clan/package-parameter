@@ -1,6 +1,6 @@
-package com.viviquity.jenkins.yumparamater;
+package com.viviquity.jenkins.yumparameter;
 
-import com.viviquity.jenkins.yumparamater.aws.AwsClientReader;
+import com.viviquity.jenkins.yumparameter.aws.AwsClientReader;
 import hudson.Extension;
 import hudson.model.ParameterValue;
 import hudson.model.SimpleParameterDefinition;
@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * yum-paramater
+ * yum-parameter
  *
  * Definition for a parameter that looks up the deployed packages for a given repository. This is specifically for AWS S3 hosted
  * repos at the moment, but would be nice to extend this to accommodate other location types. It should be very

@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparamater.aws.model;
+package com.viviquity.jenkins.yumparameter.aws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * yum-paramater
+ * yum-parameter
  *
  * Class to represent the version element of the primary XML database
  *

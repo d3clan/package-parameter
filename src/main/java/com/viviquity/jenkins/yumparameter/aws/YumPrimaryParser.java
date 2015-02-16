@@ -1,6 +1,6 @@
-package com.viviquity.jenkins.yumparamater.aws;
+package com.viviquity.jenkins.yumparameter.aws;
 
-import com.viviquity.jenkins.yumparamater.aws.model.Metadata;
+import com.viviquity.jenkins.yumparameter.aws.model.Metadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * yum-paramater
+ * yum-parameter
  *
  * @author Declan Newman (467689)
  * @since 15/02/15

@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparamater.aws.model;
+package com.viviquity.jenkins.yumparameter.aws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * yum-paramater
+ * yum-parameter
  *
  * Class to represent the XML in the primary XML database
  *
