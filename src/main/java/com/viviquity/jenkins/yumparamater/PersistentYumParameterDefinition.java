@@ -1,6 +1,6 @@
-package com.virginholidays.jenkins.yumparamater;
+package com.viviquity.jenkins.yumparamater;
 
-import com.virginholidays.jenkins.yumparamater.aws.AwsClientReader;
+import com.viviquity.jenkins.yumparamater.aws.AwsClientReader;
 import hudson.Extension;
 import hudson.model.ParameterValue;
 import hudson.model.SimpleParameterDefinition;

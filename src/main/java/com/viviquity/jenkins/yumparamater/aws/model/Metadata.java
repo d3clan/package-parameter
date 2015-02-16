@@ -1,4 +1,4 @@
-package com.virginholidays.jenkins.yumparamater.aws.model;
+package com.viviquity.jenkins.yumparamater.aws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

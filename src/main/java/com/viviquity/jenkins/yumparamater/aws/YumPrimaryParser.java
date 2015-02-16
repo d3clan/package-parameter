@@ -1,6 +1,6 @@
-package com.virginholidays.jenkins.yumparamater.aws;
+package com.viviquity.jenkins.yumparamater.aws;
 
-import com.virginholidays.jenkins.yumparamater.aws.model.Metadata;
+import com.viviquity.jenkins.yumparamater.aws.model.Metadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

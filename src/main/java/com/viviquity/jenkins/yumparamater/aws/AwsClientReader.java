@@ -1,12 +1,12 @@
-package com.virginholidays.jenkins.yumparamater.aws;
+package com.viviquity.jenkins.yumparamater.aws;
 
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.auth.InstanceProfileCredentialsProvider;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.S3Object;
 import com.google.common.collect.Maps;
-import com.virginholidays.jenkins.yumparamater.aws.model.Metadata;
-import com.virginholidays.jenkins.yumparamater.aws.model.Package;
+import com.viviquity.jenkins.yumparamater.aws.model.Metadata;
+import com.viviquity.jenkins.yumparamater.aws.model.Package;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;

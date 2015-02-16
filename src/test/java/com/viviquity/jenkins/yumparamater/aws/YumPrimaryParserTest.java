@@ -1,10 +1,10 @@
-package com.virginholidays.jenkins.yumparamater.aws;
+package com.viviquity.jenkins.yumparamater.aws;
 
-import com.virginholidays.jenkins.yumparamater.aws.model.Metadata;
-import com.virginholidays.jenkins.yumparamater.aws.model.MetadataTest;
+import com.viviquity.jenkins.yumparamater.aws.model.Metadata;
+import com.viviquity.jenkins.yumparamater.aws.model.MetadataTest;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 public class YumPrimaryParserTest {
 
