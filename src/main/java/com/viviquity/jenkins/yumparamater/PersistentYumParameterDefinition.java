@@ -59,8 +59,8 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
 
     /**
      * Allows us to validate the choices. Currently always returns true.
-     * @param choices true if the choices are valid (always true)
-     * @return
+     * @param choices to be validated
+     * @return true if the choices are valid (always true)
      */
     public static boolean areValidChoices(String choices) {
         return true;
