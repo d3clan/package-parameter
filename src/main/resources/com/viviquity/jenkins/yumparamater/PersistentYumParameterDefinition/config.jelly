@@ -1,0 +1,27 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+    <f:entry title="${%Parameter name}" help="help-name.html">
+        <f:textbox name="parameter.name" value="${instance.name}" />
+    </f:entry>
+    <f:entry title="${%Bucket name}" help="help-bucket-name.html">
+        <f:textbox name="parameter.bucketName" value="${instance.bucketName}" />
+    </f:entry>
+    <f:entry title="${%Repo path}" help="help-repo-path.html">
+        <f:textbox name="parameter.repoPath" value="${instance.repoPath}" />
+    </f:entry>
+    <f:block>
+        <table>
+            <f:optionalBlock inline="true" name="parameter.useAwsKeys" title="If accessing S3 from outside of AWS, e.g. without an IAM role, set this to true" help="help-useAwsKeys.html" checked="${instance.useAwsKeys}">
+                <f:entry title="AWS access key id" field="awsAccessKeyId" description="The AWS access key id">
+                    <f:textbox/>
+                </f:entry>
+                <f:entry title="AWS secret access key" field="awsSecretAccessKey" description="The AWS secret access key">
+                    <f:textbox/>
+                </f:entry>
+            </f:optionalBlock>
+        </table>
+    </f:block>
+    <f:entry title="${%Description}" help="/help/parameter/description.html">
+        <f:textarea name="parameter.description" value="${instance.description}" codemirror-mode="${app.markupFormatter.codeMirrorMode}" codemirror-config="${app.markupFormatter.codeMirrorConfig}" previewEndpoint="/markupFormatter/previewDescription" />
+    </f:entry>
+</j:jelly>
