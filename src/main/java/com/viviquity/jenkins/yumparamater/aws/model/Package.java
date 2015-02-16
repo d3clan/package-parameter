@@ -12,6 +12,8 @@ import java.util.Date;
 /**
  * yum-paramater
  *
+ * Class to represent the XML in the primary XML database
+ *
  * @author Declan Newman (467689)
  * @since 15/02/15
  */

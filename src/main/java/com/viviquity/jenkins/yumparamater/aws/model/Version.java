@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * yum-paramater
  *
+ * Class to represent the version element of the primary XML database
+ *
  * @author Declan Newman (467689)
  * @since 15/02/15
  */

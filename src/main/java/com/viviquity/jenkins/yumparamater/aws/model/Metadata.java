@@ -10,6 +10,8 @@ import java.util.List;
 /**
  * yum-paramater
  *
+ * Class to represent the metadata element of primary XML database
+ *
  * @author Declan Newman (467689)
  * @since 15/02/15
  */
