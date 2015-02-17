@@ -74,7 +74,7 @@ public class Package {
 
     @XmlTransient
     public String getRpmString() {
-        return String.format("%s:%s-%s-%s.%s", version.getEpoch(), name, version.getVer(), version.getRel(), arch).toLowerCase();
+        return String.format("%s-%s-%s", name, version.getVer(), version.getRel());
     }
 
     @XmlTransient
