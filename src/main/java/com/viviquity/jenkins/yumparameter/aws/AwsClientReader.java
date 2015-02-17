@@ -60,8 +60,8 @@ public class AwsClientReader {
 
     public static class Builder {
         private final String repoPath;
-        private Optional<String> awsAccessKeyId;
-        private Optional<String> awsSecretAccessKey;
+        private Optional<String> awsAccessKeyId = Optional.absent();
+        private Optional<String> awsSecretAccessKey = Optional.absent();
 
         private Builder(String repoPath) {
             this.repoPath = repoPath;
