@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlTransient;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 /**
  * yum-parameter
@@ -79,7 +80,7 @@ public class Package {
 
     @XmlTransient
     public String getNormalisedString() {
-        final DateFormat sdf = SimpleDateFormat.getInstance();
+        final DateFormat sdf = SimpleDateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM, Locale.UK);
         StringBuilder sb = new StringBuilder(version.getVer() + "-");
         final String rel = version.getRel();
         if (rel.indexOf('_') > 0) {
