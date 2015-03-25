@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws.model;
+package com.viviquity.jenkins.yumparameter.aws.yum.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

@@ -9,6 +9,12 @@
     <f:entry title="${%Repo path}" field="repoPath">
         <f:textbox name="parameter.repoPath" value="${instance.repoPath}" />
     </f:entry>
+    <f:entry field="repositoryType" name="repositoryType" title="Choose Repository Type">
+        <select name="repositoryType">
+        	<option value="apt">Apt</option>
+        	<option value="yum">Yum</option>
+    	</select>
+    </f:entry>
     <f:block>
         <table>
             <f:optionalBlock inline="true" name="parameter.useAwsKeys" field="useAwsKeys" title="If accessing S3 from outside of AWS, e.g. without an IAM role, set this to true" checked="${instance.useAwsKeys}">

@@ -1,0 +1,32 @@
+Package: firefox
+Version: 32
+Installed-Size: 68507000
+Priority: optional
+Section: firefox-section
+Maintainer: mozilla
+Architecture: all
+Description: Browser
+ From Mozilla
+MD5sum: 77a5bf1ae92c75798f1f904f671e4b93
+SHA1: 5fc68263b0f47cbf6566a1ae71e11a41f9e9f139
+SHA256: 63710b8c0126997778b82559913960d61d7600b43344161884d15bed22d829c1
+Source: mozilla-firefox
+Size: 599409520000
+Filename: pool/main/t/mozilla/firefox.deb
+
+Package: firefox
+Version: 33
+Installed-Size: 68507000
+Priority: optional
+Section: firefox-section
+Maintainer: mozilla
+Architecture: all
+Description: Browser
+ From Mozilla
+MD5sum: 77a5bf1ae92c75798f1f904f671e4b93
+SHA1: 5fc68263b0f47cbf6566a1ae71e11a41f9e9f139
+SHA256: 63710b8c0126997778b82559913960d61d7600b43344161884d15bed22d829c1
+Source: mozilla-firefox
+Size: 599409520000
+Filename: pool/main/t/mozilla/firefox.deb
+
