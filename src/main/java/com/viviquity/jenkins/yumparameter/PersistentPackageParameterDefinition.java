@@ -1,21 +1,25 @@
 package com.viviquity.jenkins.yumparameter;
 
-import com.viviquity.jenkins.yumparameter.aws.AwsClientReader;
 import hudson.Extension;
 import hudson.model.ParameterValue;
 import hudson.model.SimpleParameterDefinition;
 import hudson.model.StringParameterValue;
 import hudson.util.FormValidation;
+
+import java.io.IOException;
+import java.util.Map;
+
+import javax.xml.bind.JAXBException;
+
 import net.sf.json.JSONObject;
+
 import org.apache.commons.lang.StringUtils;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.export.Exported;
 
-import javax.xml.bind.JAXBException;
-import java.io.IOException;
-import java.util.Map;
+import com.viviquity.jenkins.yumparameter.aws.AwsClientReader;
 
 /**
  * yum-parameter
@@ -27,14 +31,15 @@ import java.util.Map;
  * @author Declan Newman (467689)
  * @since 14/02/15
  */
-public class PersistentYumParameterDefinition extends SimpleParameterDefinition {
+public class PersistentPackageParameterDefinition extends SimpleParameterDefinition {
 
     private final boolean useAwsKeys;
     private final String awsAccessKeyId;
     private final String awsSecretAccessKey;
     private final String bucketName;
     private final String repoPath;
-
+    private final String repositoryType;
+    
     /**
      * Default constructor
      * @param name the name of the parameter. This will passed to the build as a variable
@@ -46,14 +51,15 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
      * @param repoPath the path to target the S3 repo.
      */
     @DataBoundConstructor
-    public PersistentYumParameterDefinition(String name, String description, boolean useAwsKeys, String awsAccessKeyId, String awsSecretAccessKey,
-                                            String bucketName, String repoPath) {
+    public PersistentPackageParameterDefinition(String name, String description, boolean useAwsKeys, String awsAccessKeyId, String awsSecretAccessKey,
+                                            String bucketName, String repoPath, String repositoryType) {
         super(name, description);
         this.useAwsKeys = useAwsKeys;
         this.awsAccessKeyId = awsAccessKeyId;
         this.awsSecretAccessKey = awsSecretAccessKey;
         this.bucketName = bucketName;
         this.repoPath = repoPath;
+        this.repositoryType = repositoryType; 
     }
 
 
@@ -101,7 +107,7 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
      */
     @Exported
     public Map<String, String> getChoices() throws JAXBException, IOException {
-        final AwsClientReader.Builder builder = AwsClientReader.Builder.newInstance(repoPath);
+        final AwsClientReader.Builder builder = AwsClientReader.Builder.newInstance(repoPath, repositoryType);
         if (useAwsKeys && StringUtils.isNotBlank(awsAccessKeyId) && StringUtils.isNotBlank(awsSecretAccessKey)) {
             builder.withAwsAccessKeys(awsAccessKeyId, awsSecretAccessKey);
         }
@@ -167,6 +173,8 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
             return "AWS S3 Yum repo choice parameter";
         }
 
+
+        
         /**
          * The location for the help file
          * @return the location for the help file.
@@ -182,7 +190,7 @@ public class PersistentYumParameterDefinition extends SimpleParameterDefinition 
          * @return the {@link hudson.util.FormValidation} object containing the information about the validation
          */
         public FormValidation doCheckChoices(@QueryParameter String value) {
-            if (PersistentYumParameterDefinition.areValidChoices(value)) {
+            if (PersistentPackageParameterDefinition.areValidChoices(value)) {
                 return FormValidation.ok();
             } else {
                 return FormValidation.error("Invalid value");
