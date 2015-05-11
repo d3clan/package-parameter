@@ -8,17 +8,17 @@
 		<relativePath />
 	</parent>
 	<groupId>com.viviquity.jenkins</groupId>
-	<artifactId>aws-yum-parameter</artifactId>
+	<artifactId>package-parameter</artifactId>
 	<version>1.6-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 
-	<name>S3 Yum repo parameter plugin</name>
+	<name>S3 package parameter plugin</name>
 	<description>
-        A rather specific use-case. A Jenkins plugin that will look up a AWS S3 hosted Yum repo's primary xml, and glean any information needed to populate a
-        Jenkins parameter dropdown. The primary driver for me to develop this was the ability to look up the packages in the repo in order to call MCollective
+        A rather specific use-case. A Jenkins plugin that will look up a AWS S3 hosted Yum or Apt repo's database, and glean any information needed to populate
+		a Jenkins parameter dropdown. The primary driver for me to develop this was the ability to look up the packages in the repo in order to call MCollective
         with a package that we know exists.
     </description>
-	<url>https://wiki.jenkins-ci.org/display/JENKINS/AWS+Yum+Parameter+Plugin</url>
+	<url>https://wiki.jenkins-ci.org/display/JENKINS/Package+Parameter+Plugin</url>
 	<licenses>
 		<license>
 			<name>MIT License</name>
@@ -31,11 +31,17 @@
 			<name>Declan Newman</name>
 			<email>declan@declans.net</email>
 		</developer>
+		<developer>
+			<id>toff63</id>
+			<name>Christophe Marchal</name>
+			<email>toff63@gmail.com</email>
+			<url>http://francesbagual.net</url>
+		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</connection>
-		<developerConnection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</developerConnection>
-		<url>https://github.com/d3clan/aws-yum-parameter.git</url>
+		<connection>scm:git:https://github.com/d3clan/package-parameter.git</connection>
+		<developerConnection>scm:git:https://github.com/d3clan/package-parameter.git</developerConnection>
+		<url>https://github.com/d3clan/package-parameter.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	<repositories>

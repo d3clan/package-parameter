@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws.yum;
+package com.viviquity.jenkins.packageparameter.aws.yum;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,9 +6,9 @@ import java.util.Map;
 import java.util.zip.GZIPInputStream;
 
 import com.google.common.collect.Maps;
-import com.viviquity.jenkins.yumparameter.aws.PackageMetadataProvider;
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Metadata;
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Package;
+import com.viviquity.jenkins.packageparameter.aws.PackageMetadataProvider;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Metadata;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Package;
 
 public class YumMetadataProvider implements PackageMetadataProvider {
 

@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter;
+package com.viviquity.jenkins.packageparameter;
 
 import hudson.Extension;
 import hudson.model.ParameterValue;
@@ -19,7 +19,7 @@ import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.export.Exported;
 
-import com.viviquity.jenkins.yumparameter.aws.AwsClientReader;
+import com.viviquity.jenkins.packageparameter.aws.AwsClientReader;
 
 /**
  * yum-parameter
@@ -170,7 +170,7 @@ public class PersistentPackageParameterDefinition extends SimpleParameterDefinit
          */
         @Override
         public String getDisplayName() {
-            return "AWS S3 Yum repo choice parameter";
+            return "AWS S3 repo choice parameter";
         }
 
 

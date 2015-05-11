@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws.apt;
+package com.viviquity.jenkins.packageparameter.aws.apt;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,7 +11,7 @@ import org.apache.commons.lang.StringUtils;
 
 import com.esotericsoftware.yamlbeans.YamlException;
 import com.esotericsoftware.yamlbeans.YamlReader;
-import com.viviquity.jenkins.yumparameter.aws.apt.model.Package;
+import com.viviquity.jenkins.packageparameter.aws.apt.model.Package;
 
 public class AptPackagesParser {
 
