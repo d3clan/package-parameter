@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws.yum;
+package com.viviquity.jenkins.packageparameter.aws.yum;
 
 import java.io.InputStream;
 
@@ -11,7 +11,7 @@ import javax.xml.transform.stream.StreamSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Metadata;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Metadata;
 
 /**
  * yum-parameter

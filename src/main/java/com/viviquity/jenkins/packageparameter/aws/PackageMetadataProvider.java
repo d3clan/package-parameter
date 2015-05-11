@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws;
+package com.viviquity.jenkins.packageparameter.aws;
 
 import java.io.InputStream;
 import java.util.Map;

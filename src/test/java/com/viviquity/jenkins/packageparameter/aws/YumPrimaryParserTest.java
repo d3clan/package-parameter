@@ -1,8 +1,8 @@
-package com.viviquity.jenkins.yumparameter.aws;
+package com.viviquity.jenkins.packageparameter.aws;
 
-import com.viviquity.jenkins.yumparameter.aws.model.MetadataTest;
-import com.viviquity.jenkins.yumparameter.aws.yum.YumPrimaryParser;
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Metadata;
+import com.viviquity.jenkins.packageparameter.aws.model.MetadataTest;
+import com.viviquity.jenkins.packageparameter.aws.yum.YumPrimaryParser;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Metadata;
 
 import org.junit.Test;
 

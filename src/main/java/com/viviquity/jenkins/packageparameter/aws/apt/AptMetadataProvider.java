@@ -1,9 +1,9 @@
-package com.viviquity.jenkins.yumparameter.aws.apt;
+package com.viviquity.jenkins.packageparameter.aws.apt;
 
 import java.io.InputStream;
 import java.util.Map;
 
-import com.viviquity.jenkins.yumparameter.aws.PackageMetadataProvider;
+import com.viviquity.jenkins.packageparameter.aws.PackageMetadataProvider;
 
 
 public class AptMetadataProvider implements PackageMetadataProvider {

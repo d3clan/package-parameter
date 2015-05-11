@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws.apt;
+package com.viviquity.jenkins.packageparameter.aws.apt;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.viviquity.jenkins.yumparameter.aws.apt.model.Package;
+import com.viviquity.jenkins.packageparameter.aws.apt.model.Package;
 
 public class AptPackagesParserTest {
 

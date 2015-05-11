@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws.apt.model;
+package com.viviquity.jenkins.packageparameter.aws.apt.model;
 
 import java.util.Map;
 

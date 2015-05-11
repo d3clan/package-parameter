@@ -1,12 +1,12 @@
-package com.viviquity.jenkins.yumparameter.aws.model;
+package com.viviquity.jenkins.packageparameter.aws.model;
 
 import org.junit.Test;
 
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Location;
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Metadata;
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Package;
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Time;
-import com.viviquity.jenkins.yumparameter.aws.yum.model.Version;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Location;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Metadata;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Package;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Time;
+import com.viviquity.jenkins.packageparameter.aws.yum.model.Version;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;

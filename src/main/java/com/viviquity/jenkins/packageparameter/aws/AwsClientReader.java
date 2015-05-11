@@ -1,4 +1,4 @@
-package com.viviquity.jenkins.yumparameter.aws;
+package com.viviquity.jenkins.packageparameter.aws;
 
 import java.io.IOException;
 import java.util.Map;
@@ -10,8 +10,8 @@ import com.amazonaws.auth.InstanceProfileCredentialsProvider;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.S3Object;
 import com.google.common.base.Optional;
-import com.viviquity.jenkins.yumparameter.aws.apt.AptMetadataProvider;
-import com.viviquity.jenkins.yumparameter.aws.yum.YumMetadataProvider;
+import com.viviquity.jenkins.packageparameter.aws.apt.AptMetadataProvider;
+import com.viviquity.jenkins.packageparameter.aws.yum.YumMetadataProvider;
 
 /**
  * yum-parameter
