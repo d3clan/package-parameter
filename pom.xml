@@ -14,8 +14,8 @@
 
 	<name>S3 Yum repo parameter plugin</name>
 	<description>
-        A rather specific use-case. A Jenkins plugin that will look up a AWS S3 hosted Yum repo's primary xml, and glean any information needed to populate a
-        Jenkins parameter dropdown. The primary driver for me to develop this was the ability to look up the packages in the repo in order to call MCollective
+        A rather specific use-case. A Jenkins plugin that will look up a AWS S3 hosted Yum or Apt repo's database, and glean any information needed to populate
+		a Jenkins parameter dropdown. The primary driver for me to develop this was the ability to look up the packages in the repo in order to call MCollective
         with a package that we know exists.
     </description>
 	<url>https://wiki.jenkins-ci.org/display/JENKINS/AWS+Yum+Parameter+Plugin</url>

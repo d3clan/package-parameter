@@ -170,7 +170,7 @@ public class PersistentPackageParameterDefinition extends SimpleParameterDefinit
          */
         @Override
         public String getDisplayName() {
-            return "AWS S3 Yum repo choice parameter";
+            return "AWS S3 repo choice parameter";
         }
 
 
