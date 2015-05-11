@@ -8,11 +8,11 @@
 		<relativePath />
 	</parent>
 	<groupId>com.viviquity.jenkins</groupId>
-	<artifactId>aws-yum-parameter</artifactId>
+	<artifactId>package-parameter</artifactId>
 	<version>1.6-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 
-	<name>S3 Yum repo parameter plugin</name>
+	<name>S3 package parameter plugin</name>
 	<description>
         A rather specific use-case. A Jenkins plugin that will look up a AWS S3 hosted Yum or Apt repo's database, and glean any information needed to populate
 		a Jenkins parameter dropdown. The primary driver for me to develop this was the ability to look up the packages in the repo in order to call MCollective
@@ -39,9 +39,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</connection>
-		<developerConnection>scm:git:https://github.com/d3clan/aws-yum-parameter.git</developerConnection>
-		<url>https://github.com/d3clan/aws-yum-parameter.git</url>
+		<connection>scm:git:https://github.com/d3clan/package-parameter.git</connection>
+		<developerConnection>scm:git:https://github.com/d3clan/package-parameter.git</developerConnection>
+		<url>https://github.com/d3clan/package-parameter.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	<repositories>
