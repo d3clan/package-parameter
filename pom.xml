@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.viviquity.jenkins</groupId>
 	<artifactId>package-parameter</artifactId>
-	<version>1.8-SNAPSHOT</version>
+	<version>1.7-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 
 	<name>S3 package parameter plugin</name>
