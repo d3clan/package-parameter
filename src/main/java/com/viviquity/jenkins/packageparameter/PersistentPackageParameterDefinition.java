@@ -49,6 +49,7 @@ public class PersistentPackageParameterDefinition extends SimpleParameterDefinit
      * @param awsSecretAccessKey the secret access key, if required.
      * @param bucketName the name of the S3 bucket where the repo is hosted.
      * @param repoPath the path to target the S3 repo.
+     * @param repositoryType the type of repository that will be used to retrive the packages from. APT or Yum.
      */
     @DataBoundConstructor
     public PersistentPackageParameterDefinition(String name, String description, boolean useAwsKeys, String awsAccessKeyId, String awsSecretAccessKey,
