@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.viviquity.jenkins</groupId>
 	<artifactId>package-parameter</artifactId>
-	<version>1.7</version>
+	<version>1.7-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 
 	<name>S3 package parameter plugin</name>
@@ -42,7 +42,7 @@
 		<connection>scm:git:https://github.com/d3clan/package-parameter.git</connection>
 		<developerConnection>scm:git:https://github.com/d3clan/package-parameter.git</developerConnection>
 		<url>https://github.com/d3clan/package-parameter.git</url>
-		<tag>package-parameter-1.7</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<repositories>
 		<repository>
